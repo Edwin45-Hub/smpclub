@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('https://www.swimthings.com/v/vspfiles/assets/images/4N9A0848-min.jpg'); /* Path to the background image in the main folder */
+    background-image: url('images/background.jpg'); /* Path to the background image in the main folder */
     background-size: cover; /* Ensures the image covers the entire page */
     background-position: center; /* Centers the image */
     background-attachment: fixed; /* Keeps the background image fixed while scrolling */
