@@ -1,0 +1,207 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg'); /* Path to the background image in the main folder */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+    color: #fff; /* Default text color */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Header Styles */
+header {
+    background: rgba(51, 51, 51, 0.8); /* Slightly transparent background for header */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FF5733; /* Change color on hover */
+}
+
+/* Hero Section Styles */
+.hero {
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-in;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Login and Booking Section Styles */
+.login-section, .booking-section {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9); /* Light white background with slight transparency */
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Soft shadow for depth */
+    margin-top: 80px; /* Adjust for fixed header */
+    animation: fadeIn 2s ease-in;
+}
+
+.login-section h2, .booking-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.rates {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow cards to wrap in smaller screens */
+    padding: 20px; /* Add padding around the rates section */
+    background: #f5f5f5; /* Light grey background for contrast */
+    border-radius: 8px; /* Rounded corners for the rates section */
+    margin: 20px auto; /* Center the rates section and add margin */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+.rate-card {
+    background: #fff; /* White background for rate cards */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1); /* Soft shadow for rate cards */
+    width: 45%; /* Set width to allow for two cards side by side */
+    margin: 10px; /* Space between cards */
+}
+
+.rate-card h3 {
+    color: #007BFF; /* Blue color for headers */
+    margin-bottom: 10px;
+}
+
+.rate-card p {
+    font-size: 1.5em; /* Larger font size for prices */
+    color: #000; /* Black color for prices for better visibility */
+    font-weight: bold; /* Make the prices bold */
+    margin: 10px 0; /* Space around prices */
+}
+
+/* Book Now Button Styles */
+.btn-book-now {
+    display: block;
+    width: 200px; /* Set a specific width */
+    margin: 20px auto; /* Center the button horizontally and add margin */
+    padding: 15px; /* Add padding for a larger click area */
+    background-color: #FF5733; /* Bright color for visibility */
+    color: #fff; /* White text color for contrast */
+    text-align: center; /* Center text within the button */
+    text-decoration: none; /* Remove underline from link */
+    font-size: 1.2em; /* Increase font size */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition effects */
+}
+
+.btn-book-now:hover {
+    background-color: #c70039; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Footer Styles */
+footer {
+    background: rgba(51, 51, 51, 0.8); /* Slightly transparent background for footer */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
